@@ -1,0 +1,19 @@
+<div class="mainDiv">
+  <h2>Animals</h2>
+
+  <ul>
+    <li *ngFor="let animal of animals">
+      Name: {{ animal.name }} ({{ animal.type }})
+    </li>
+  </ul>
+
+  <div *ngFor="let animal of animals" class="flexContainer">
+    <div class="flexItem">
+      <span>Name: {{ animal.name }}</span>
+    </div>
+
+    <div class="flexItem">
+      <span>Type: {{ animal.type }}</span>
+    </div>
+  </div>
+</div>

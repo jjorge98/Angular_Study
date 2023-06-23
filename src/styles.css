@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+.mainDiv {
+  border-bottom: 1px solid red;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+body {
+  margin-bottom: 500px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  height: 50px;
+  border-radius: 1em;
+  border-color: transparent;
+  font-size: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
