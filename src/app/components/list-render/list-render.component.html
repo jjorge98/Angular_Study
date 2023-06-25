@@ -3,9 +3,18 @@
 
   <ul>
     <li *ngFor="let animal of animals">
+      <button
+        [ngClass]="'mainButton'"
+        [ngStyle]="{ 'margin-right': '20px' }"
+        (click)="showAge(animal)"
+      >
+        Show age
+      </button>
       Name: {{ animal.name }} ({{ animal.type }})
     </li>
   </ul>
+
+  <p>{{ animalDetail }}</p>
 
   <div *ngFor="let animal of animals" class="flexContainer">
     <div class="flexItem">
@@ -14,6 +23,10 @@
 
     <div class="flexItem">
       <span>Type: {{ animal.type }}</span>
+    </div>
+
+    <div class="flexItem">
+      <span>Age: {{ animal.age }}</span>
     </div>
   </div>
 </div>

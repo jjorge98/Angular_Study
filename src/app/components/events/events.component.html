@@ -1,5 +1,7 @@
 <div class="mainDiv">
   <p *ngIf="show">Showing message</p>
 
-  <button (click)="showMessage()">Click to change visibility</button>
+  <button [ngClass]="['mainButton', 'centerItem']" (click)="showMessage()">
+    Click to change visibility
+  </button>
 </div>

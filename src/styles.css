@@ -10,13 +10,16 @@ body {
   margin-bottom: 500px;
 }
 
-button {
+.mainButton {
   background-color: blue;
   color: white;
-  height: 50px;
-  border-radius: 1em;
+  height: 40px;
+  border-radius: 0.5em;
   border-color: transparent;
   font-size: 15px;
+}
+
+.centerItem {
   display: block;
   margin-left: auto;
   margin-right: auto;
