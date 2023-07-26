@@ -1,0 +1,19 @@
+<div class="mainDiv">
+  <h2>Two-way data binding</h2>
+
+  <form>
+    <input
+      type="text"
+      [(ngModel)]="name"
+      name="name"
+      placeholder="Type your name"
+      autocomplete="off"
+    />
+
+    <input type="submit" value="Send" />
+  </form>
+
+  <div *ngIf="name !== ''">
+    <p>The name is: {{ name }}</p>
+  </div>
+</div>

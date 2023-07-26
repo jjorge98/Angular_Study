@@ -1,0 +1,18 @@
+<div class="mainDiv" *ngIf="animal; else notAnimal">
+  <p class="centerText" [ngStyle]="{ 'font-size': '16px' }">
+    <b>ID:</b> {{ animal.id }}
+  </p>
+  <p class="centerText" [ngStyle]="{ 'font-size': '16px' }">
+    <b>Name:</b> {{ animal.name }}
+  </p>
+  <p class="centerText" [ngStyle]="{ 'font-size': '16px' }">
+    <b>Age:</b> {{ animal.age }}
+  </p>
+  <p class="centerText" [ngStyle]="{ 'font-size': '16px' }">
+    <b>Type:</b> {{ animal.type }}
+  </p>
+</div>
+
+<ng-template #notAnimal class="mainDiv">
+  <h2 class="centerText">Animal not found</h2>
+</ng-template>

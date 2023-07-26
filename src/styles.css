@@ -1,13 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 .mainDiv {
-  border-bottom: 1px solid red;
   padding: 2em;
-  margin-bottom: 1em;
-}
-
-body {
-  margin-bottom: 500px;
 }
 
 .mainButton {
@@ -23,4 +17,12 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.navItem {
+  padding: 2em;
+}
+
+.centerText {
+  text-align: center;
 }

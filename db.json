@@ -1,0 +1,54 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Turca",
+      "type": "Dog",
+      "age": 2
+    },
+    {
+      "id": 2,
+      "name": "Tom",
+      "type": "Cat",
+      "age": 4
+    },
+    {
+      "id": 3,
+      "name": "Frida",
+      "type": "Mouse",
+      "age": 3
+    },
+    {
+      "id": 4,
+      "name": "Bob",
+      "type": "Horse",
+      "age": 7
+    }
+  ],
+  "animals2": [
+    {
+      "id": 1,
+      "name": "Turca",
+      "type": "Dog",
+      "age": 2
+    },
+    {
+      "id": 2,
+      "name": "Tom",
+      "type": "Cat",
+      "age": 4
+    },
+    {
+      "id": 3,
+      "name": "Frida",
+      "type": "Mouse",
+      "age": 3
+    },
+    {
+      "id": 4,
+      "name": "Bob",
+      "type": "Horse",
+      "age": 7
+    }
+  ]
+}

@@ -5,12 +5,29 @@
     <li *ngFor="let animal of animals">
       <button
         [ngClass]="'mainButton'"
-        [ngStyle]="{ 'margin-right': '20px' }"
+        [ngStyle]="{ 'margin-right': '15px' }"
         (click)="showAge(animal)"
       >
         Show age
       </button>
-      Name: {{ animal.name }} ({{ animal.type }})
+
+      <button
+        [ngClass]="'mainButton'"
+        [ngStyle]="{ 'margin-right': '15px' }"
+        (click)="deleteAnimal(animal)"
+      >
+        Delete Animal
+      </button>
+
+      <button
+        [ngClass]="'mainButton'"
+        [ngStyle]="{ 'margin-right': '15px' }"
+        routerLink="/list/{{ animal.id }}"
+      >
+        Check Details
+      </button>
+
+      <span>Name: {{ animal.name }} ({{ animal.type }})</span>
     </li>
   </ul>
 

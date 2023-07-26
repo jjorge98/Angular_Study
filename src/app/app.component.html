@@ -1,12 +1,23 @@
 <div class="mainDiv">
-  <h1>Hello World!</h1>
-  <p>teste</p>
+  <h2 [ngClass]="'centerText'">Header</h2>
 </div>
-<app-first-component></app-first-component>
-<app-parent-data [name]="userName" [personData]="personData"></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-events></app-events>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
+
+<div class="mainDiv">
+  <nav>
+    <a routerLink="/" [ngClass]="'navItem'">Home</a>
+    <a routerLink="/directives" [ngClass]="'navItem'">Directives</a>
+    <a routerLink="/emitter" [ngClass]="'navItem'">Emitter</a>
+    <a routerLink="/event" [ngClass]="'navItem'">Event</a>
+    <a routerLink="/ifRender" [ngClass]="'navItem'">If Render</a>
+    <a routerLink="/list" [ngClass]="'navItem'">List render</a>
+    <a routerLink="/parentData" [ngClass]="'navItem'">Parent Data</a>
+    <a routerLink="/pipes" [ngClass]="'navItem'">Pipes</a>
+    <a routerLink="/twoWay" [ngClass]="'navItem'">Two-Way Data Binding</a>
+    <a routerLink="/fireworks" [ngClass]="'navItem'">Fireworks</a>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
+<div class="mainDiv">
+  <h2 [ngClass]="'centerText'">Footer</h2>
+</div>
